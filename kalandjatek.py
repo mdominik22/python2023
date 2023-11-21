@@ -48,6 +48,26 @@ while True:
     szalId=tortenet[keresettIndex][3][valasztott]
     if valasztott==999:
         break
+    
+while True:
+    current_story = tortenet[szalId - 1]
+    print(current_story[1])  # Display the current story text
+
+    choices = current_story[2]
+    next_story_ids = current_story[3]
+
+    valasztott = menu(choices)
+    if valasztott == 999:
+        break  # User chose to exit
+
+    szalId = next_story_ids[valasztott]
+
+# Add more story elements as neededtortenet.append
+   tortenet.append([3,
+    "Elindultam az iskolába.",
+    ["gyalog", "biciklivel", "busz"],
+    [4, 5, 6]
+])
 
 
 
