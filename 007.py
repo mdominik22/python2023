@@ -1,25 +1,35 @@
 print("Makarész Dominik")
 
-print("2024.01.11]")
+print("2024.01.11")
+
+a = 37
+b = 42
+c = 23
+d = 76
+e = 14
+f = 98
 
 print("  -----------")
-print(f"  | 37 | 42 |")
+print(f"  | {a} | {b} |")
 print("  -----------")
-print(f"  | 23 | 76 |")
+print(f"  | {c} | {d} |")
 print("  -----------")
-print(f"  | 14 | 98 |")
+print(f"  | {e} | {f} |")
 print("  -----------")
 
 
 #VAGY
-
-
 print("Makarész Dominik")
 
 print("2024.01.11")
 
-for i in range(3):
-    print("  -----------")
-    print(f"  | {37 - i*13} | {42 + i*34} |")
+tablazat= [
+    [37, 42],
+    [23, 76],
+    [14, 98]
+]
 
 print("  -----------")
+for row in tablazat:
+    print(f"  | {row[0]:2} | {row[1]:2} |")
+    print("  -----------")
